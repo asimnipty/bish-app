@@ -1,23 +1,31 @@
 import React from 'react'
+import { BrowserRouter, Route, Router, Routes, Switch } from 'react-router-dom'
 import Home from './components/Home'
 import Nav from './components/Nav'
 import Services from './components/Services'
 import About from './components/About'
 import Contact from './components/Contact'
+import Extra from './components/Extra'
+import { Link } from 'react-router-dom'
 
 const App = () => {
   return (
-    <>
+    
+    <BrowserRouter>
+    
       <Nav />
       <Home />
-      <Services />
       <About />
-      <Contact/>
-      
+      <Services />
+      <Extra />
+      <Contact />
     
-    </>
+
+    </BrowserRouter>
     
-  )
+    
+   
+  )           
 }
 
 export default App
