@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     
-    <div className=' sticky top-0 flex justify-between items-center w-full px-4' >
+    <div className=' sticky top-0 shadow-md font-body flex  justify-between items-center w-full px-4' >
         <img className='h-15 w-27' src={logo} alt='logo'/>
         <ul className='hidden md:flex  uppercase text-2xl list-style-type:none  font-extrabold font-body text-blue-900'>
             <li className='p-10 hover:text-red-400'>
