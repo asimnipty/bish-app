@@ -17,20 +17,21 @@ const Nav = () => {
 
   return (
     
-    <div className=' sticky top-0 shadow-md font-body flex  justify-between items-center w-full px-4' >
-        <img className='h-15 w-27' src={logo} alt='logo'/>
+    <header className='w-screen sticky z-20 top-0 shadow-md font-body flex justify-between items-center px-5' id='nav'>
+        <a href='#nav' ><img className='h-15 w-27' src={logo} alt='logo' /></a>
         <ul className='hidden md:flex  uppercase text-2xl list-style-type:none  font-extrabold font-body text-blue-900'>
             <li className='p-10 hover:text-red-400'>
               <a href='#home'>Home </a>
             </li>
-            <li className='p-10  hover:text-red-400'>
-              <a href='#about'>About </a>
-            </li>
+            
             <li className='p-10  hover:text-red-400'>
               <a href='#service'>Services </a> 
             </li>
             <li className='p-10  hover:text-red-400'>
               <a href='#extra'>Extra </a>  
+            </li>
+            <li className='p-10  hover:text-red-400'>
+              <a href='#about'>About </a>
             </li>
             <li className='p-10  hover:text-red-400'>
               <a href='#contact'>Contact </a>
@@ -63,6 +64,7 @@ const Nav = () => {
           </ul>
         </div>
         
+         
         {/* <div onClick={handleNav}>
           {!nav ? <AiOutlineMenu /> : <AiOutlineClose />  }
         </div>
@@ -77,7 +79,7 @@ const Nav = () => {
             <li className=' p-2 border-b border-gray-600'>Contact</li>
         </ul> */}
         
-    </div>
+    </header>
   )
 }
 

@@ -8,7 +8,7 @@ import git from './icons/git.png'
 const Footer = () => {
   return (
     
-    <div className="h-[250px] p-5" id='contact'>
+    <div className="h-[250px] bg-slate-300 p-5 " id='contact'>
       
         <div className='flex justify-between mt-[150px]'>
           <div>
