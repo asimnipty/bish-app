@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className='font-body w-full h-full py-16 px-4' id='home'>
         
-          <div className='w-full pl-20 py-16 flex justify-between'>
+          <div className='w-full pl-20 py-16 lg:flex justify-between'>
             <img src= {currentImage} className='rounded-md w-[700px] h-[400px]' />
             <div className='p-20'>
               <h1 className=' text-4xl uppercase text-black-800'>Technological Excellence and innovation</h1>

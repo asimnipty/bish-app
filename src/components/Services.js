@@ -32,12 +32,12 @@ const Services = () => {
   return (
     <div className='font-body w-full h-full py-16 px-4' id='service'>
         
-          <div className='max-w-[1240px] mx-auto my-40 flex justify-between'>
+          <div className='max-w-[1240px] mx-auto my-40 lg:flex justify-between'>
             
             <div className='p-10 '>
               <h1 className=' text-4xl uppercase text-black-800'> services </h1>
               <p className='pt-10 text-2xl text-blue-700 justify-start'>
-              Cloud computing and software have a profound impact on human society, transforming the way we live, work, and interact  
+              Cloud computing, AI and software have a profound impact on human society, transforming the way we live, work, and interact. We are in the partnership with world top tech organizations to bring handful services
               </p>
               <div className='flex pt-10  justify-between'>
                 <img className=' h-10' src={ms} />

@@ -19,7 +19,7 @@ const Nav = () => {
     
     <header className='w-screen sticky z-20 top-0 shadow-md font-body flex justify-between items-center px-5' id='nav'>
         <a href='#nav' ><img className='h-15 w-27' src={logo} alt='logo' /></a>
-        <ul className='hidden md:flex  uppercase text-2xl list-style-type:none  font-extrabold font-body text-blue-900'>
+        <ul className='hidden md:flex uppercase text-2xl list-style-type:none  font-extrabold font-body text-blue-900'>
             <li className='p-10 hover:text-red-400'>
               <a href='#home'>Home </a>
             </li>
@@ -28,7 +28,7 @@ const Nav = () => {
               <a href='#service'>Services </a> 
             </li>
             <li className='p-10  hover:text-red-400'>
-              <a href='#extra'>Idea</a>  
+              <a href='#idea'>Idea</a>  
             </li>
             <li className='p-10  hover:text-red-400'>
               <a href='#about'>About </a>
