@@ -28,7 +28,7 @@ const Nav = () => {
               <a href='#service'>Services </a> 
             </li>
             <li className='p-10  hover:text-red-400'>
-              <a href='#extra'>Extra </a>  
+              <a href='#extra'>Idea</a>  
             </li>
             <li className='p-10  hover:text-red-400'>
               <a href='#about'>About </a>
