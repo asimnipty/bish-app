@@ -44,7 +44,7 @@ const Nav = () => {
         <div onClick={handleNav} className='block md:hidden'>
           {!nav ? <AiOutlineClose size={30} /> :  <AiOutlineMenu size={30} /> }
         </div>
-        <div className= {!nav ? 'fixed top-0 pt-[100px] w-[60%] h-full left-0 font-body ease-in-out duration-500' : 'fixed left-[-100%]'}>
+        <div className= {!nav ? 'z-[9999] fixed top-0 pt-[100px] w-[60%] h-full left-0 font-body ease-in-out duration-500' : 'fixed left-[-100%]'}>
           <ul className=' uppercase font-extrabold'>
             <li className='p-10 hover:underline'>
               <a href='#homet'>Home </a>
