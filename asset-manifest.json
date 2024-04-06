@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/bish-app/static/css/main.c3cdc7fb.css",
-    "main.js": "/bish-app/static/js/main.00dd32cb.js",
+    "main.css": "/bish-app/static/css/main.6d61156d.css",
+    "main.js": "/bish-app/static/js/main.1a563567.js",
     "static/media/pngtree-overshoot-computer-desktop-background-image_259786.jpg": "/bish-app/static/media/pngtree-overshoot-computer-desktop-background-image_259786.e303c021705342cac430.jpg",
     "static/media/banner-img1.jpg": "/bish-app/static/media/banner-img1.6179482197523048ef29.jpg",
     "static/media/TMC9-AdobeStock_97492164.webp": "/bish-app/static/media/TMC9-AdobeStock_97492164.e58dc1e36ec567ef40a4.webp",
     "static/media/logo1.png": "/bish-app/static/media/logo1.7be8095fdda53e5bb37e.png",
     "index.html": "/bish-app/index.html",
-    "main.c3cdc7fb.css.map": "/bish-app/static/css/main.c3cdc7fb.css.map",
-    "main.00dd32cb.js.map": "/bish-app/static/js/main.00dd32cb.js.map"
+    "main.6d61156d.css.map": "/bish-app/static/css/main.6d61156d.css.map",
+    "main.1a563567.js.map": "/bish-app/static/js/main.1a563567.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3cdc7fb.css",
-    "static/js/main.00dd32cb.js"
+    "static/css/main.6d61156d.css",
+    "static/js/main.1a563567.js"
   ]
 }
