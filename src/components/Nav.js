@@ -17,7 +17,7 @@ const Nav = () => {
 
   return (
     
-    <header className=' z-[9999] overflow-hidden w-screen sticky  top-0 shadow-md font-body flex justify-between items-center px-5' id='nav'>
+    <header className=' z-[9999] overflow-hidden w-screen sticky  top-0 shadow-md font-body flex justify-between items-center px-5 bg-gray-100' id='nav'>
         <a href='#nav' ><img className='h-15 w-27' src={logo} alt='logo' /></a>
         <ul className='hidden md:flex uppercase text-2xl list-style-type:none  font-extrabold font-body text-blue-900'>
             <li className='p-10 hover:text-red-400'>
