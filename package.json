@@ -1,8 +1,8 @@
 {
   "name": "bish-app",
   "version": "0.1.0",
-  "homepage": "https://asimnipty.github.io/bish-app",
-  "private": true,
+  "homepage": "https://bisharod.com",
+  "private": false,
   "dependencies": {
     "@material-tailwind/react": "^2.1.2",
     "@testing-library/jest-dom": "^5.17.0",
