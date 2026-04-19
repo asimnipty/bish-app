@@ -15,7 +15,7 @@ export default function Navigation({ user, onLogout }) {
           {/* Left: Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="flex items-center gap-2">
-              <img src="/logo.png" alt="Bisharod" className="h-10" />
+              <img src="/logo.png" alt="Bisharod" className="h-14" />
             </Link>
           </div>
 
