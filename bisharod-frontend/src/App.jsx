@@ -66,7 +66,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route 
               path="/dashboard" 
-              element={user?.role === 'advisor' ? <Dashboard user={user} /> : <Navigate to="/" />} 
+              element={user?.role === 'specialist' ? <Dashboard user={user} /> : <Navigate to="/" />} 
             />
             <Route 
               path="/messages" 

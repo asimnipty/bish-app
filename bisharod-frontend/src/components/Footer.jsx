@@ -10,23 +10,15 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold text-orange-400 mb-4">Bisharod</h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Connecting advisors with seekers. Share expertise, seek guidance, grow together.
+              Connecting specialists with people seeking guidance. Share expertise, seek guidance, grow together.
             </p>
           </div>
           <div>
-            <h4 className="font-semibold text-white mb-4">For Advisors</h4>
+            <h4 className="font-semibold text-white mb-4">For Specialists</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/register?role=advisor" className="hover:text-orange-400 transition-colors">Register as Advisor</Link></li>
+              <li><Link to="/register?role=specialist" className="hover:text-orange-400 transition-colors">Register as Specialist</Link></li>
               <li><Link to="/dashboard" className="hover:text-orange-400 transition-colors">Dashboard</Link></li>
               <li><Link to="/" className="hover:text-orange-400 transition-colors">How It Works</Link></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">For Seekers</h4>
-            <ul className="space-y-2 text-gray-400 text-sm">
-              <li><Link to="/register?role=seeker" className="hover:text-orange-400 transition-colors">Find Advisor</Link></li>
-              <li><Link to="/experts" className="hover:text-orange-400 transition-colors">Browse Advisors</Link></li>
-              <li><Link to="/" className="hover:text-orange-400 transition-colors">Get Started</Link></li>
             </ul>
           </div>
           <div>

@@ -39,12 +39,12 @@ const userSchema = new mongoose.Schema({
   },
   role: {
     type: String,
-    enum: ['expert', 'seeker'],
+    enum: ['specialist'],
     required: true
   },
   expertise: {
     type: String,
-    required: function() { return this.role === 'expert'; }
+    required: function() { return this.role === 'specialist'; }
   },
   bio: {
     type: String,
@@ -154,7 +154,7 @@ app.post('/api/auth/register', async (req, res) => {
       email,
       password: hashedPassword,
       role,
-      expertise: role === 'expert' ? expertise : undefined,
+      expertise: role === 'specialist' ? expertise : undefined,
       bio,
       location
     });
@@ -270,10 +270,10 @@ app.get('/api/auth/me', async (req, res) => {
   }
 });
 
-// Get all experts
+// Get all specialists
 app.get('/api/experts', async (req, res) => {
   try {
-    const experts = await User.find({ role: 'expert' })
+    const experts = await User.find({ role: 'specialist' })
       .select('-password')
       .sort({ rating: -1 });
     res.json(experts);
@@ -283,11 +283,11 @@ app.get('/api/experts', async (req, res) => {
   }
 });
 
-// Get expert by ID
+// Get specialist by ID
 app.get('/api/experts/:id', async (req, res) => {
   try {
     const expert = await User.findById(req.params.id).select('-password');
-    if (!expert || expert.role !== 'expert') {
+    if (!expert || expert.role !== 'specialist') {
       return res.status(404).json({ message: 'Expert not found' });
     }
     res.json(expert);
@@ -297,11 +297,11 @@ app.get('/api/experts/:id', async (req, res) => {
   }
 });
 
-// Search experts
+// Search specialists
 app.get('/api/experts/search', async (req, res) => {
   try {
     const { query, location } = req.query;
-    let filter = { role: 'expert' };
+    let filter = { role: 'specialist' };
     
     if (query) {
       filter.$or = [
@@ -376,13 +376,13 @@ app.get('/api/messages/:userId', async (req, res) => {
   }
 });
 
-// Rate expert
+// Rate specialist
 app.post('/api/experts/:id/rate', async (req, res) => {
   try {
     const { rating } = req.body;
     const expert = await User.findById(req.params.id);
     
-    if (!expert || expert.role !== 'expert') {
+    if (!expert || expert.role !== 'specialist') {
       return res.status(404).json({ message: 'Expert not found' });
     }
 

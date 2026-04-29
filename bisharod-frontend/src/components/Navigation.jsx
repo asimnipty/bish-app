@@ -31,7 +31,7 @@ export default function Navigation({ user, onLogout }) {
               to="/experts" 
               className={`font-semibold transition-colors ${isActive('/experts') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-500'}`}
             >
-              Find Advisors
+              Find Specialists
             </Link>
             <Link 
               to="/about" 
@@ -39,7 +39,7 @@ export default function Navigation({ user, onLogout }) {
             >
               About
             </Link>
-            {user && user.role === 'advisor' && (
+            {user && user.role === 'specialist' && (
               <Link 
                 to="/dashboard" 
                 className={`font-semibold transition-colors ${isActive('/dashboard') ? 'text-orange-600' : 'text-gray-700 hover:text-orange-500'}`}
@@ -101,7 +101,7 @@ export default function Navigation({ user, onLogout }) {
               className={`block px-3 py-2 font-semibold ${isActive('/experts') ? 'text-orange-600' : 'text-gray-700'}`}
               onClick={() => setMobileMenuOpen(false)}
             >
-              Find Advisors
+              Find Specialists
             </Link>
             <Link 
               to="/about" 
@@ -110,7 +110,7 @@ export default function Navigation({ user, onLogout }) {
             >
               About
             </Link>
-            {user && user.role === 'advisor' && (
+            {user && user.role === 'specialist' && (
               <Link 
                 to="/dashboard" 
                 className={`block px-3 py-2 font-semibold ${isActive('/dashboard') ? 'text-orange-600' : 'text-gray-700'}`}
