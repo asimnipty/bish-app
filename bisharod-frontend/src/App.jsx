@@ -26,7 +26,14 @@ function App() {
     const token = localStorage.getItem('token')
     const userData = localStorage.getItem('user')
     if (token && userData) {
-      setUser(JSON.parse(userData))
+      try {
+        setUser(JSON.parse(userData))
+      } catch (error) {
+        // Prevent a blank screen when corrupted localStorage data exists.
+        console.error('Invalid user data in localStorage, clearing session.', error)
+        localStorage.removeItem('token')
+        localStorage.removeItem('user')
+      }
     }
     setLoading(false)
   }, [])
